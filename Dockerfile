@@ -2,7 +2,7 @@
 FROM ubuntu:20.04
 
 # Disable interactive prompt during install
-#ENV DEBIAN_FRONTEND=noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Install Apache
 RUN apt-get update && apt install apache2 -y
